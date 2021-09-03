@@ -43,14 +43,14 @@
         //      &copy; 
 
         /***	FONT-FAMILY	***/
-        h1 {font-family: ''};
-        h2 {font-family: ''};     
-        h3 {font-family: ''};
-        h4 {font-family: 'Edwardian Script ITC'};
-        h5 {font-family: 'Courier New', Courier, monospace};	     
-        h6 {font-family: ''};
+        h1 {font-family: 'Indie Flower', cursive };
+        h2 {font-family: 'Amiri', serif };     
+        h3 {font-family: 'Allison', cursive };
+        h4 {font-family: 'Edwardian Script ITC' };
+        h5 {font-family: 'Courier New', Courier, monospace };	     
+        h6 {font-family: 'Parisienne', cursive };
 
-        p {font-family: 'Courier New', Courier, monospace};
+        p {font-family: 'Courier New', Courier, monospace };
 
 /*              MANIPULANDO O SASS              */
 
@@ -119,5 +119,10 @@ $layout-margin-size: 10px;
         Basta rodar o comando abaixo no Terminal
         "npm install -g sass” */
 
-        /* Assistindo o Sass                 
-        sass --watch scss/style.scss:css/style.css */
+        /* Assistindo o Sass
+        
+        ***   DECLARANDO A PASTA NO CMD   ***
+        sass --watch scss/style.scss:css/style.css 
+
+        ***   RODANDO O CMD DENTRO DA PASTA   ***
+        sass --watch estilos.scss:estilos.css */
