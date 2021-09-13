@@ -1,8 +1,10 @@
 /* VARIÁVEIS SASS */
 
 // Variável Cor:
-$dark-blue: #003060;
+$dark-blue: darken(#003060, 5); // Escurece a cor
+$blue: lighten(#003060, 50); // Esclarecer a cor
 $dark: #191919;
 $light: #f9f9f9;
 $light-gray: #cfcfcf;
 $light-dark: #a0a0a0;
+

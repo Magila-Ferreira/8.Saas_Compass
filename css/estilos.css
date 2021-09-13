@@ -427,7 +427,7 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid #003060;
+  border-top: 5px solid #002347;
   background: rgba(25, 25, 25, 0.8);
   height: 90px;
   width: 100%;
@@ -487,7 +487,7 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: #003060;
+  background: #002347;
   border: 0;
   padding: 0.6em;
   font-size: 1.2em;
@@ -576,7 +576,7 @@ header .container {
 .plano h3 {
   color: #f9f9f9;
   font-size: 1.8em;
-  background: #003060;
+  background: #002347;
   text-align: center;
   height: 2em;
   padding-top: 0.6em;
@@ -585,7 +585,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: #003060;
+  color: #002347;
   font-size: 2.75em;
 }
 
@@ -607,7 +607,7 @@ header .container {
 }
 
 .plano button {
-  background: #003060;
+  background: #002347;
   border: 0;
   color: #f9f9f9;
   width: 210px;
@@ -704,7 +704,7 @@ textarea {
 
 .contato button {
   margin: 0 auto;
-  background: #003060;
+  background: #002347;
   border: 0;
   color: #f9f9f9;
   width: 210px;
