@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /* VARIÁVEIS SASS */
+.social li a, .plataformas li {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.contato button, .plano button, .destaque button {
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
+}
+
+.contato button:hover, .plano button:hover, .destaque button:hover {
+  background: #f9f9f9;
+  color: #002347;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -493,10 +509,8 @@ header .container {
   font-size: 1.2em;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
   font-weight: bold;
 }
-
 /** Sobre **/
 .sobre {
   background: #cfcfcf;
@@ -529,9 +543,6 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -615,10 +626,8 @@ header .container {
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
   margin-left: 2em;
 }
-
 .icone-check,
 .icone-x {
   background: url(../imagens/sprite.png) no-repeat;
@@ -712,9 +721,7 @@ textarea {
   font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
 }
-
 /** Footer **/
 footer {
   display: block;
@@ -792,9 +799,6 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
   margin-left: 1em;
 }
 
