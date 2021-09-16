@@ -12,4 +12,5 @@ $light-dark: #a0a0a0;
 $ponto-de-quebra: 980px;
 
 // Variável Media-query-STRING:
-$mq-mobile: "(max-width: $ponto-de-quebra)";
+$mq-mobile: "(max-width: " $ponto-de-quebra")"; ///Concatenação entre "STRING" e $Variável. 
+

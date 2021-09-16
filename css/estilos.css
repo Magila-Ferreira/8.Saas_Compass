@@ -21,6 +21,11 @@
   text-align: justify;
 }
 
+form, .post-destaque,
+.posts-antigos {
+  width: auto;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -426,7 +431,7 @@ body {
   width: 940px;
   margin: 0 auto;
 }
-@media (max-width: $ponto-de-quebra) {
+@media (max-width: 980px ) {
   .container {
     width: 90%;
   }
@@ -457,7 +462,7 @@ header {
   width: 100%;
   position: absolute;
 }
-@media (max-width: $ponto-de-quebra) {
+@media (max-width: 980px ) {
   header {
     height: auto;
   }
@@ -474,32 +479,43 @@ header {
 header .container {
   position: relative;
 }
-@media (max-width: $ponto-de-quebra) {
+@media (max-width: 980px ) {
   header .container {
     position: static;
   }
 }
-
-.menu-principal {
+header .container .menu-principal {
   position: absolute;
   right: 0;
   top: -0.5em;
   font-size: 1.2em;
   font-weight: lighter;
 }
-.menu-principal ul {
+header .container .menu-principal ul {
   padding-left: 0;
 }
-.menu-principal li {
+header .container .menu-principal li {
   display: inline-block;
   width: 5em;
 }
-.menu-principal a {
+header .container .menu-principal a {
   color: #f9f9f9;
   text-decoration: none;
 }
-.menu-principal a:hover {
+header .container .menu-principal a:hover {
   text-decoration: underline;
+}
+@media (max-width: 980px ) {
+  header .container .menu-principal {
+    position: static;
+    display: block;
+    text-align: center;
+    width: auto;
+  }
+  header .container .menu-principal li {
+    margin: 0.4em;
+    width: auto;
+  }
 }
 
 /** Destaque **/
@@ -523,7 +539,6 @@ header .container {
   font-size: 2.2em;
   font-weight: bold;
 }
-
 .destaque button {
   margin-top: 1em;
   background: #002347;
@@ -534,6 +549,13 @@ header .container {
   border-radius: 50px;
   font-weight: bold;
 }
+@media (max-width: 980px ) {
+  .destaque {
+    font-size: 14px;
+    height: 250px;
+  }
+}
+
 /** Sobre **/
 .sobre {
   background: #cfcfcf;

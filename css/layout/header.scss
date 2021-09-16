@@ -23,35 +23,48 @@ header {
 
     .container {
         position: relative;
-    
+
         @media #{$mq-mobile} {
             position: static;
         }
-    }
-}
+        
+        .menu-principal {
+            position: absolute;
+            right: 0;
+            top: -0.5em;
+            font-size: 1.2em;
+            font-weight: lighter;
+      
+            ul {
+                padding-left: 0;
+            }
+        
+            li {
+                display: inline-block;
+                width: 5em;
+            }
+        
+            a {
+                color: $light;
+                text-decoration: none;
+        
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-.menu-principal {
-    position: absolute;
-    right: 0;
-    top: -0.5em;
-    font-size: 1.2em;
-    font-weight: lighter;
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        display: inline-block;
-        width: 5em;
-    }
-
-    a {
-        color: $light;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
+            @media #{$mq-mobile} {                
+                position: static;
+                display: block;
+                text-align: center;
+                width: auto;
+        
+                li {
+                    margin: .4em;
+                    width: auto;
+                }
+            }
         }
     }
 }
+

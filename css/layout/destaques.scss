@@ -21,19 +21,25 @@
             }
         }
     }
-}
 
-.destaque button {
-    margin-top: 1em;
-    background: $dark-blue;
-    border: 0;
-    padding: 0.6em;
-    font-size: 1.2em;
-    @include borda-arredondada(50px);
-    @extend %sombra-padrao;
-    font-weight: bold;
-
-    &:hover {
-        @extend %button-hover;
+    button {
+        margin-top: 1em;
+        background: $dark-blue;
+        border: 0;
+        padding: 0.6em;
+        font-size: 1.2em;
+        @include borda-arredondada(50px);
+        @extend %sombra-padrao;
+        font-weight: bold;
+    
+        &:hover {
+            @extend %button-hover;
+        }
     }
+
+    @media #{$mq-mobile} {    
+        font-size: 14px;
+        height: 250px;
+    };
 }
+
