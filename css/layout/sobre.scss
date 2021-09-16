@@ -16,6 +16,7 @@
 
 .sobre p {
     font: 0.9em/1.8 sans-serif;
+    @extend %justify-content;
 }
 
 .sobre p:first-child {

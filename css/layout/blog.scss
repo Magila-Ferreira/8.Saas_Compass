@@ -2,9 +2,8 @@
 .blog {
     display: block;
     position: relative;
-}
 
-.blog::after {
+    &::after {
     content: "";
     background: url(../imagens/fundo.png);
     background-size: 25px 25px;
@@ -15,6 +14,7 @@
     right: 0;
     position: absolute;
     z-index: -1;
+    }
 }
 
 .post-destaque,
@@ -22,14 +22,19 @@
     width: 48%;
     display: inline-block;
     vertical-align: top;
+
+    article p {
+        @extend %justify-content;
+    }
+
 }
 
 .post-destaque {
     margin-right: 2em;
-}
 
-.post-destaque img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .posts-antigos a {
@@ -39,8 +44,9 @@
     padding-left: 2.5em;
     height: 1.7em;
     display: block;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-.posts-antigos a:hover {
-    text-decoration: underline;
-}
