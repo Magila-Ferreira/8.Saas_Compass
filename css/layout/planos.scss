@@ -1,10 +1,10 @@
 /** Planos **/
 .planos {
     background: $dark;
-}
 
-.planos h2 {
-    color: $light;
+    h2 {
+        color: $light;
+    }
 }
 
 .plano {
@@ -13,26 +13,42 @@
     display: inline-block;
     margin: 1em 0 0 1.4em;
     padding-bottom: 2em;
-}
 
-.plano:hover {
-    background: $light-gray;
-}
+    &:hover {
+        background: $light-gray;
+    }
 
-.plano h3 {
-    color: $light;
-    font-size: 1.8em;
-    background: $dark-blue;
-    text-align: center;
-    height: 2em;
-    padding-top: 0.6em;
-    margin-top: 0;
-}
+    h3 {
+        color: $light;
+        font-size: 1.8em;
+        background: $dark-blue;
+        text-align: center;
+        height: 2em;
+        padding-top: 0.6em;
+        margin-top: 0;
+    }
 
-.plano div {
-    text-align: center;
-    color: $dark-blue;
-    font-size: 2.75em;
+    div {
+        text-align: center;
+        color: $dark-blue;
+        font-size: 2.75em;
+    }
+
+    button {
+        background: $dark-blue;
+        border: 0;
+        color: $light;
+        width: 210px;
+        height: 38px;
+        font-size: 1.2em;
+        @include borda-arredondada;
+        @extend %sombra-padrao;
+        margin-left: 2em;
+    
+        &:hover {
+            @extend %button-hover;
+        }
+    }
 }
 
 .itens-plano {
@@ -52,22 +68,6 @@
 
     span {
         float: right;
-    }
-}
-
-.plano button {
-    background: $dark-blue;
-    border: 0;
-    color: $light;
-    width: 210px;
-    height: 38px;
-    font-size: 1.2em;
-    @include borda-arredondada;
-    @extend %sombra-padrao;
-    margin-left: 2em;
-
-    &:hover {
-        @extend %button-hover;
     }
 }
 

@@ -20,13 +20,13 @@ header {
             }
         }
     }
-}
 
-header .container {
-    position: relative;
-
-    @media #{$mq-mobile} {
-        position: static;
+    .container {
+        position: relative;
+    
+        @media #{$mq-mobile} {
+            position: static;
+        }
     }
 }
 

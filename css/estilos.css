@@ -471,7 +471,6 @@ header {
     display: block;
   }
 }
-
 header .container {
   position: relative;
 }
@@ -539,6 +538,12 @@ header .container {
 .sobre {
   background: #cfcfcf;
 }
+.sobre p {
+  font: 0.9em/1.8 sans-serif;
+}
+.sobre p:first-child {
+  margin-bottom: 3em;
+}
 
 .duas-colunas {
   -webkit-column-count: 2;
@@ -546,23 +551,13 @@ header .container {
   column-count: 2;
   columns: 1;
 }
-
 .duas-colunas h3 {
   margin: 0;
-}
-
-.sobre p {
-  font: 0.9em/1.8 sans-serif;
-}
-
-.sobre p:first-child {
-  margin-bottom: 3em;
 }
 
 .plataformas {
   padding: 0;
 }
-
 .plataformas li {
   display: inline-block;
   width: 50px;
@@ -570,19 +565,15 @@ header .container {
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
-
 .plataformas li:nth-child(1) {
   background-image: url(../imagens/logo-apple.png);
 }
-
 .plataformas li:nth-child(2) {
   background-image: url(../imagens/logo-android.png);
 }
-
 .plataformas li:nth-child(3) {
   background-image: url(../imagens/logo-windows.png);
 }
-
 .plataformas li:nth-child(4) {
   background-image: url(../imagens/logo-blackberry.png);
 }
@@ -591,7 +582,6 @@ header .container {
 .planos {
   background: #191919;
 }
-
 .planos h2 {
   color: #f9f9f9;
 }
@@ -603,11 +593,9 @@ header .container {
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
 }
-
 .plano:hover {
   background: #cfcfcf;
 }
-
 .plano h3 {
   color: #f9f9f9;
   font-size: 1.8em;
@@ -617,13 +605,22 @@ header .container {
   padding-top: 0.6em;
   margin-top: 0;
 }
-
 .plano div {
   text-align: center;
   color: #002347;
   font-size: 2.75em;
 }
-
+.plano button {
+  background: #002347;
+  border: 0;
+  color: #f9f9f9;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  margin-left: 2em;
+}
 .itens-plano {
   padding-left: 1.2em;
 }
@@ -641,17 +638,6 @@ header .container {
   float: right;
 }
 
-.plano button {
-  background: #002347;
-  border: 0;
-  color: #f9f9f9;
-  width: 210px;
-  height: 38px;
-  font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  margin-left: 2em;
-}
 .icone-check,
 .icone-x {
   background: url(../imagens/sprite.png) no-repeat;
