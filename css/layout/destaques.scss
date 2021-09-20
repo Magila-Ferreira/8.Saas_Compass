@@ -28,8 +28,8 @@
         border: 0;
         padding: 0.6em;
         font-size: 1.2em;
-        @include borda-arredondada(50px);
-        @extend %sombra-padrao;
+        @include border-radius(50px);
+        @include box-shadow($dark-blue 0 2px 5px);
         font-weight: bold;
     
         &:hover {

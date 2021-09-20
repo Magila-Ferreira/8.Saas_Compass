@@ -1,31 +1,27 @@
 @charset "UTF-8";
+.sprite-sprite {
+  background-image: url('/imagens/sprite-s1e1f3a7a9e.png');
+  background-repeat: no-repeat;
+}
+
 /* VARIÁVEIS SASS */
-.social li a, .plataformas li {
+.plataformas li, .social li a {
   text-indent: -9999px;
   overflow: hidden;
   background-repeat: no-repeat;
 }
 
-.contato button, .plano button, .destaque button {
-  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
-  box-shadow: 0 2px 6.65px 0.35px rgba(25, 25, 25, 0.3);
-}
-
-.contato button:hover, .plano button:hover, .destaque button:hover {
+.destaque button:hover, .plano button:hover, .contato button:hover {
   background: #f9f9f9;
   color: #002347;
 }
 
-.post-destaque article p,
-.posts-antigos article p, .sobre p {
+.sobre p, .post-destaque article p,
+.posts-antigos article p {
   text-align: justify;
 }
 
-form, .post-destaque,
-.posts-antigos {
-  width: auto;
-}
-
+/***** AULA 8 - COMPASS *****/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -289,9 +285,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -330,8 +326,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -343,8 +339,8 @@ input[type=radio] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -353,7 +349,7 @@ input[type=number]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -367,8 +363,8 @@ input[type=search] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -431,7 +427,7 @@ body {
   width: 940px;
   margin: 0 auto;
 }
-@media (max-width: 980px ) {
+@media (max-width: 980px) {
   .container {
     width: 90%;
   }
@@ -462,7 +458,7 @@ header {
   width: 100%;
   position: absolute;
 }
-@media (max-width: 980px ) {
+@media (max-width: 980px) {
   header {
     height: auto;
   }
@@ -472,14 +468,14 @@ header {
   }
   header h1 img {
     max-width: 100%;
-    margin: 0.5em auto;
+    margin: .5em auto;
     display: block;
   }
 }
 header .container {
   position: relative;
 }
-@media (max-width: 980px ) {
+@media (max-width: 980px) {
   header .container {
     position: static;
   }
@@ -498,6 +494,12 @@ header .container .menu-principal li {
   display: inline-block;
   width: 5em;
 }
+@media (max-width: 980px) {
+  header .container .menu-principal li {
+    margin: .4em;
+    width: auto;
+  }
+}
 header .container .menu-principal a {
   color: #f9f9f9;
   text-decoration: none;
@@ -505,15 +507,11 @@ header .container .menu-principal a {
 header .container .menu-principal a:hover {
   text-decoration: underline;
 }
-@media (max-width: 980px ) {
+@media (max-width: 980px) {
   header .container .menu-principal {
     position: static;
     display: block;
     text-align: center;
-    width: auto;
-  }
-  header .container .menu-principal li {
-    margin: 0.4em;
     width: auto;
   }
 }
@@ -545,11 +543,15 @@ header .container .menu-principal a:hover {
   border: 0;
   padding: 0.6em;
   font-size: 1.2em;
+  -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+  -moz-box-shadow: #002347 0 2px 5px;
+  -webkit-box-shadow: #002347 0 2px 5px;
+  box-shadow: #002347 0 2px 5px;
   font-weight: bold;
 }
-@media (max-width: 980px ) {
+@media (max-width: 980px) {
   .destaque {
     font-size: 14px;
     height: 250px;
@@ -639,10 +641,15 @@ header .container .menu-principal a:hover {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: #002347 0 2px 5px;
+  -webkit-box-shadow: #002347 0 2px 5px;
+  box-shadow: #002347 0 2px 5px;
   margin-left: 2em;
 }
+
 .itens-plano {
   padding-left: 1.2em;
 }
@@ -699,6 +706,13 @@ header .container .menu-principal a:hover {
   display: inline-block;
   vertical-align: top;
 }
+@media (max-width: 980px) {
+  .post-destaque,
+  .posts-antigos {
+    width: auto;
+  }
+}
+
 .post-destaque {
   margin-right: 2em;
 }
@@ -728,14 +742,20 @@ form {
   margin: 0 auto;
   width: 50%;
 }
+@media (max-width: 980px) {
+  form {
+    width: auto;
+  }
+}
 
 .contato input,
 textarea {
   width: 100%;
   margin-bottom: 0.8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   border: 2px solid #cfcfcf;
 }
 
@@ -747,9 +767,14 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: #002347 0 2px 5px;
+  -webkit-box-shadow: #002347 0 2px 5px;
+  box-shadow: #002347 0 2px 5px;
 }
+
 /** Footer **/
 footer {
   display: block;
@@ -820,13 +845,13 @@ footer .container img {
   background-position: top;
   background-size: 50px 50px;
 }
-.social a[href*=facebook] {
+.social a[href*="facebook"] {
   background-image: url(../imagens/facebook.png);
 }
-.social a[href*=twitter] {
+.social a[href*="twitter"] {
   background-image: url(../imagens/twitter.png);
 }
-.social a[href*=instagram] {
+.social a[href*="instagram"] {
   background-image: url(../imagens/instagram.png);
 }
 
@@ -834,5 +859,3 @@ footer .container img {
 .social li {
   display: inline;
 }
-
-/*# sourceMappingURL=estilos.css.map */

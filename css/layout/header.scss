@@ -42,6 +42,11 @@ header {
             li {
                 display: inline-block;
                 width: 5em;
+
+                @media #{$mq-mobile} {
+                    margin: .4em;
+                    width: auto;
+                }
             }
         
             a {
@@ -57,14 +62,10 @@ header {
                 position: static;
                 display: block;
                 text-align: center;
-                width: auto;
-        
-                li {
-                    margin: .4em;
-                    width: auto;
-                }
+                width: auto;                 
             }
         }
     }
 }
+
 
