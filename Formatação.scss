@@ -212,4 +212,26 @@ $layout-margin-size: 10px;
         sass --watch scss/style.scss:css/style.css 
 
         ***   RODANDO O CMD DENTRO DA PASTA   ***
-        sass --watch estilos.scss:estilos.css */
+        sass --watch estilos.scss:estilos.css 
+        
+        
+        4. Instalação do Compass:
+        
+        Basta rodar o comando abaixo no Terminal
+        "gem install compass"
+
+        *** NAVEGAR ATÉ A PASTA DO PROJETO NO CMD ***
+        "cd caminho-da-pasta-do-projeto"
+
+        *** COMANDO DE CRIAÇÃO DO COMPASS
+        "compass create"
+
+        
+        5. Assistindo o Compass:
+        
+        ***   DECLARANDO A PASTA NO CMD   ***
+        compass watch css/estilos.scss
+        
+        */
+
+        

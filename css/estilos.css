@@ -1,6 +1,11 @@
 @charset "UTF-8";
-.sprite-sprite {
-  background-image: url('/imagens/sprite-s1e1f3a7a9e.png');
+.plataformas-sprite, .plataformas-logo-android, .plataformas-logo-apple, .plataformas-logo-blackberry, .plataformas-logo-windows {
+  background-image: url('../imagens/plataformas-s91620aa4cf.png');
+  background-repeat: no-repeat;
+}
+
+.sprite-sprite, .sprite-icone-check, .sprite-icone-x {
+  background-image: url('../imagens/sprite-s8ca5edb2ee.png');
   background-repeat: no-repeat;
 }
 
@@ -579,6 +584,22 @@ header .container .menu-principal a:hover {
   margin: 0;
 }
 
+.plataformas-logo-android {
+  background-position: 0 0;
+}
+
+.plataformas-logo-apple {
+  background-position: 0 -80px;
+}
+
+.plataformas-logo-blackberry {
+  background-position: 0 -161px;
+}
+
+.plataformas-logo-windows {
+  background-position: 0 -226px;
+}
+
 .plataformas {
   padding: 0;
 }
@@ -586,20 +607,7 @@ header .container .menu-principal a:hover {
   display: inline-block;
   width: 50px;
   height: 60px;
-  background-position: center;
   margin: 1em 1.5em 0 0;
-}
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
-}
-.plataformas li:nth-child(2) {
-  background-image: url(../imagens/logo-android.png);
-}
-.plataformas li:nth-child(3) {
-  background-image: url(../imagens/logo-windows.png);
-}
-.plataformas li:nth-child(4) {
-  background-image: url(../imagens/logo-blackberry.png);
 }
 
 /** Planos **/
@@ -667,19 +675,18 @@ header .container .menu-principal a:hover {
   float: right;
 }
 
-.icone-check,
-.icone-x {
-  background: url(../imagens/sprite.png) no-repeat;
-  width: 18px;
-  height: 18px;
+.sprite-icone-check {
+  background-position: 0 0;
 }
 
-.icone-check {
-  background-position: -5px -5px;
+.sprite-icone-x {
+  background-position: 0 -23px;
 }
 
-.icone-x {
-  background-position: -33px -5px;
+.sprite-icone-check,
+.sprite-icone-x {
+  width: 20px;
+  height: 19px;
 }
 
 /** Blog **/
