@@ -4,6 +4,11 @@
     border-radius: $raio;
 };
 
+/// Aula 9 - Operações matemáticas com FUNCTIONS
+@function tamanho-padrao($multiplicador) {
+    @return round($multiplicador * $fonte-padrao);
+}
+
 /// AULA 6 - Transformando Mixins em PLACEHOLDER
 %image-replacement {
     text-indent: -9999px;
